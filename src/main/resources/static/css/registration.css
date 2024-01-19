@@ -1,0 +1,19 @@
+body {
+	background-color: #66ffcc;;
+     text-align: center;
+     padding-top: 250px;
+     font-size: large;
+}
+.sub{
+	font-size: larger;
+	border: 2px solid black;
+	border-radius: 80px;
+	padding: 8px;
+}
+.sub:hover{
+	background-color: black;
+	color: white;
+}
+.field{
+	border-left: 3px;
+}

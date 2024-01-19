@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tube Hub:CreatePlayList</title>
+<style type="text/css">
+body {
+	background-color: #66ffcc;;
+}
+.sub{
+	font-size: large;
+	border: 2px solid black;
+	border-radius: 50px;
+	padding: 2px;
+}
+.sub:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<form action="addPlayList" method ="post">
+	<label>PlayList name</label>
+	<input type="text" name="name">
+	<br>
+
+	<div th:each="song:${songs}">
+		<input type="checkbox" th:name="songs" th:value="${song.id}">
+		<label th:text="${song.name}"></label>
+	</div>
+	<br>
+	<input type="submit" value="ADD PLAYLIST" class="sub">
+	</form>
+
+</body>
+</html>

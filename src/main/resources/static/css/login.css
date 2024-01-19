@@ -1,0 +1,23 @@
+body {
+	background-color: #66ffcc;;
+     text-align: center;
+     padding-top: 250px;
+     font-size: large;
+}
+#em{
+	padding-bottom: 10px;
+}
+#ps{
+	padding-bottom: 10px;
+}
+.sub{
+	font-size: larger;
+	border: 2px solid black;
+	border-radius: 80px;
+	padding: 4px;
+}
+.sub:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
